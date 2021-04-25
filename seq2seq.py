@@ -64,11 +64,6 @@ class NearestNeighborSemanticParser(object):
         return test_derivs
 
 
-###################################################################################################################
-# You do not have to use any of the classes in this file, but they're meant to give you a starting implementation.
-# for your network.
-###################################################################################################################
-
 # The BeamDec here is adapted from the given Beam class in utils.py, some functions are
 # commented out or simplified to better fit the seq2seq decoding scenario
 class BeamDec(object):
@@ -513,10 +508,6 @@ class RNNDecoder(nn.Module):
         output = self.logsoftmax(output)
         return output, (hn[0], hn[1])
 
-
-###################################################################################################################
-# End optional classes
-###################################################################################################################
 
 def make_padded_input_tensor(exs: List[Example], input_indexer: Indexer, max_len: int,
                              reverse_input=False) -> np.ndarray:
