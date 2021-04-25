@@ -9,7 +9,6 @@ from lf_evaluator import *
 import numpy as np
 from typing import List
 import os
-
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
 
